@@ -1,0 +1,209 @@
+/*  Cite fonts
+    font-family: 'Roboto', sans-serif;                      container .cool
+    font-family: 'Encode Sans SC', sans-serif;               h1
+    font-family: 'Encode Sans SC', sans-serif;              textarea
+    font-family: 'Fira Code', monospace;                    smile
+
+
+    font-family: 'Source Code Pro', monospace;              textarea
+
+*/
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+    font-size: 16px;
+}
+
+h1,h2 {
+    font-weight: 500;
+    font-family: 'Encode Sans SC', sans-serif;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h1 {
+    text-align: end;
+}
+
+header {
+    position: relative;
+    background: #2196f3;
+    height: 60px;
+    width: 100%;
+    top: 0;
+}
+
+.header {
+    height: 60px;
+}
+
+.reload {
+    z-index: 10;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: calc(100% - (50% + 15px));
+    left: 1%;
+    background: #2196f3;
+    border-radius: 50px;
+    transition: background-color 3s;
+}
+
+.reload a {
+    line-height: 30px;
+    display: block;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.reload:hover {
+    background-color: #0067b9;
+    transition: background-color 3s;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.tag {
+    background: #ccc;
+}
+
+textarea {
+    font-size: 16px;
+    box-shadow: 3px 5px 0px 0px rgb(163 214 255);
+    background: #bfbfbf2e;
+    color: black;
+    border-radius: 5px;
+    border-color: #ccc;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.cool {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.block {
+    margin-bottom: 80px;
+}
+
+.blockFirstBg {
+    background: rgb(33,150,243);
+    background: linear-gradient(
+            180deg, rgba(33,150,243,1) 0%, rgba(73,170,247,1) 44%, rgba(255,255,255,1) 100%);
+    height: 1000px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.bgItems .circle {
+    border-radius: 50px;
+    position: absolute;
+    background: #fff;
+    z-index: 1;
+}
+
+.bgItems .line {
+    z-index: -1;
+    position: absolute;
+    top: 3000px;
+    left: 0;
+    height: 1300px;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(33,150,243,1) 49%, rgba(0,0,0,0.3211659663865546) 100%);
+}
+
+.catPaw {
+}
+
+.catPawText {
+    font-family: 'Encode Sans SC', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    transform: rotate(30deg);
+    position: absolute;
+    top: 44px;
+    left: -10px;
+}
+
+
+
+.themes {
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: fixed;
+    top: calc(100% - (50% - 15px - 5px));
+    left: 1.82%;
+    background: #d7d7d7;
+    transition: opacity 3s;
+}
+
+.themes:hover {
+    opacity: 0.5;
+    transition: opacity 3s;
+}
+
+body.darkTheme .themes:hover {
+    opacity: 0.5;
+    transition: opacity 3s;
+}
+
+
+
+body.darkTheme {
+    background: #000;
+    color: #fff;
+}
+
+body.darkTheme textarea {
+    color: red;
+    text-shadow: 2px 2px 1px black;
+}
+
+body.darkTheme .blockFirstBg {
+    background: rgb(0,0,0);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 62%, rgba(255,255,255,1) 159%);
+}
+
+body.darkTheme .themes {
+    opacity: 1;
+    box-shadow: 0 0 4px 0px #898989d6;
+    background: #5c5c5c;
+    transition: opacity 3s;
+}
+
+body.darkTheme .reload {
+    background: #ffffff3d;
+}
+
+body.darkTheme .reload:hover {
+    background: #ffffffa1;
+}
+
+body.darkTheme .tag {
+    background: #970a00;
+    color: black;
+}
+
+body.darkTheme .line {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(33,150,243,1) 49%, rgba(0,0,0,0.3211659663865546) 100%);
+}

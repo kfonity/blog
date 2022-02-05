@@ -1,0 +1,112 @@
+.smile_1 {
+    color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    font-family: 'Fira Code', monospace;
+    font-size: 40px;
+    transform: rotate(150deg);
+}
+
+.smile_2 {
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 368px;
+    left: 173px;
+    font-family: 'Fira Code', monospace;
+    font-size: 66px;
+    transform: rotate(58deg);
+}
+
+.smile_3 {
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 412px;
+    left: 100px;
+    font-family: 'Fira Code', monospace;
+    font-size: 20px;
+    transform: rotate(195deg);
+}
+
+.smile_4 {
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 412px;
+    left: 1000px;
+    font-family: 'Fira Code', monospace;
+    font-size: 31px;
+    transform: rotate(195deg);
+}
+
+.smile_5 {
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 474px;
+    left: 1109px;
+    font-family: 'Fira Code', monospace;
+    font-size: 31px;
+    transform: rotate(128deg);
+}
+
+.smile_6 {
+    color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 577px;
+    left: 1184px;
+    font-family: 'Fira Code', monospace;
+    font-size: 31px;
+    transform: rotate(357deg);
+}
+
+.smile_7 {
+    z-index: 1;
+    text-shadow: 20px 8px 4px #673ab7;
+    color: #000000;
+    position: absolute;
+    top: 567px;
+    left: 1086px;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    transform: rotate(110deg);
+}
+
+.smile_8 {
+    z-index: 1;
+    color: #000000;
+    position: absolute;
+    top: 347px;
+    left: 700px;
+    font-family: 'Fira Code', monospace;
+    font-size: 22px;
+    transform: rotate(110deg);
+}
+
+.smile_9 {
+    z-index: 1;
+    opacity: 0.5;
+    color: #fff;
+    position: absolute;
+    top: 347px;
+    left: 500px;
+    font-family: 'Fira Code', monospace;
+    font-size: 32px;
+    transform: rotate(316deg);
+}
+
+.smile_10 {
+    z-index: 1;
+    opacity: 0.4;
+    color: #fff;
+    position: absolute;
+    top: 365px;
+    left: 250px;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+}
+

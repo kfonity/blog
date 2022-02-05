@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="coolstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <!--  Fonts  -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- end -->
+
+    <link rel="stylesheet" href="smile.css">
+
+</head>
+<body class="">
+
+<div class="reload">
+    <a href="#index">&uarr;</a>
+</div>
+
+<div class="themes btn-toggle">
+
+</div>
+
+<div class="bgItems">
+
+    <div class="catPaw" style="top:8px;left:20px;position:absolute;">
+        <div class="circle" style="width: 50px;height: 50px;background:#f5f4e5;">
+        </div>
+        <div class="circle" style="width: 23px;height: 23px;top:17px;left:53px;">
+        </div>
+        <div class="circle" style="width: 19px;height: 19px;top:40px;left:43px;">
+        </div>
+        <div class="circle" style="width: 16px;height: 16px;top:51px;left:27px;">
+        </div>
+        <div class="catPawText">
+            Лапка
+        </div>
+<!--        <div class="circle" style="width: 25px;height: 25px;top:13px;left:15px;border: 1px solid #c7c7c7;background: #e9e9e9;">
+        </div>-->
+    </div>
+
+    <div class="smile smile_1">
+        :3
+    </div>
+    <div class="smile smile_2">
+        :3
+    </div>
+    <div class="smile smile_3">
+        :3
+    </div>
+    <div class="smile smile_4">
+        =)
+    </div>
+    <div class="smile smile_5">
+        =)
+    </div>
+    <div class="smile smile_6">
+        =)
+    </div>
+    <div class="smile smile_7">
+        =)
+    </div>
+    <div class="smile smile_8">
+        =p
+    </div>
+    <div class="smile smile_9">
+        =p
+    </div>
+    <div class="smile smile_10">
+        =p
+    </div>
+    <div class="smile smile_10" style="left:271px;color:#fff;">
+        =p
+    </div>
+    <div class="smile smile_10" style="left:306px;top:332px;color:#000;font-size:45px">
+        =p
+    </div>
+</div>
+
+<div class="block block_1">
+    <div class="" id="index">
+        <div class="blockFirstBg"></div>
+        <br><br class="crazyPadding">
+        <div class="container">
+            <h1 style="text-align:center;">JSX</h1>
+    <pre>
+    <textarea cols="50" rows="1" readonly style="overflow:hidden">
+const element = <h1>Hello, world!</h1>;
+    </textarea>
+    Эта строка является JSX
+
+    JSX производит React-элементы
+
+    Реакт учитывает тот факт, что механизм отрисовки связан с ещё несколькими важными механизмам UI: обработка событий,
+    изменения состояния со временем и подготовка данных к отображению на экране.
+
+    Вместо того, чтобы отделять технологии, помещяя разметку и логику в отдельные файлы, Реакт разделяет задачи.
+    Для этого он использует слабо связанные единицы: "Компоненты", которые содержат и логику, и разметку.
+
+    Реакт не требует использование JSX. Тем не менее JSX даёт абсолютную наглядность при работе с UI внутри кода
+    Javascript. Так же он позволяет Реакт показывать полезные предупреждения и сообщения об ошибках.
+    </pre>
+        </div>
+
+
+        <h2>Встраиваемые выражения в JSX</h2>
+
+
+        <div class="container">
+
+<pre>
+
+    В примере ниже мы объявляем переменную с именем <span class="tag">name</span>, а затем используем её внутри JSX,
+    заключая в фигурные скобки
+    <textarea cols="95" rows="6" readonly style="overflow:hidden;position:relative;z-index:2;">const name = 'Вася Пупкин';
+const element = <h1>Привет, {name}</h1>;
+React.DOM.render(
+element,
+document.getElementById('root')
+);
+    </textarea>
+
+    Можно встроить любое JavaScript выражение в JSX, нужно лишь обернуть его в фигурные скобки.
+
+    Например <span class="tag">2+2, user.firstName, formatName(user)</span> - всё является корректным выражением.
+
+    В следующем примеры мы встраиваем результат вызова JavaScript функции <span class="tag">formatName(user)</span>
+    в <span class="tag">&lt;h1&gt;</span>
+
+    <textarea cols="95" rows="21" readonly style="overflow:hidden">
+function formatName(user) {
+    return user.firstName + ' ' + user.lastName;
+}
+
+const user = {
+    firstName: 'Nikita',
+    lastName: 'Kireev'
+};
+
+// улучшаем читабельность
+
+const element = (
+    <h1>
+        Hello, {formatName(user)}!
+    </h1>
+);
+
+ReactDOM.render(
+    element,
+    document.getElementById('root')
+);
+    </textarea>
+
+    Рекомендуется оборочивать JSX выражение в круглые скобки <span class="tag">()</span>
+
+</pre>
+
+        </div>
+
+
+        <div class="container">
+
+            <h2>JSX сам является выражением</h2>
+
+            <div class="cool">
+                После компиляции JSX-выражения становятся обычными Javascript-объектами.
+            </div>
+
+            <div class="cool">
+                Это означает то, что JSX можно использовать внутри оператора <span class="tag">if</span>,
+                цикла <span class="tag">for</span>, присваивать переменным, принимать как аргумент и возвращать из функций.<br>
+                <textarea cols="110" rows="6" readonly style="overflow:hidden">
+function getGreeting(user) {
+    if (user) {
+        return <h1>Hello, {formatName(user)}!</h1>;
+    }
+    return <h1>Hello, Stranger.</h1>;
+}
+        </textarea>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <h2>Указание атрибутов с помощью JSX</h2>
+
+            <div class="cool">
+                Мы можем использовать ковычки для указания строковых либералов как атрибутов:
+                <textarea cols="110" rows="1" readonly style="overflow:hidden;">
+const element = <div tabIndex='0'></div>;
+        </textarea>
+            </div>
+
+            <div class="cool">
+                Наравне с ковычками, мы можем встроить JavaScript код в атрибут, с помощью фигурных скобок
+                <textarea cols="110" rows="1" readonly style="overflow:hidden">
+const element = <img src={user.avatarUrl}></div>
+        </textarea>
+            </div>
+            <div class="cool">
+                Не ставить ковычки вокруг фигурных скобок, JSX будет воспринимать Js код, как строковый литерал
+            </div>
+
+            <span class="tag"></span>
+        </div>
+
+        <div class="container">
+
+            <h2>Указание потомков с помощью JSX</h2>
+
+            <div class="cool">
+                Если тег пустой, его можно закрыть с помощью />
+                <textarea cols="110" rows="1" readonly style="overflow:hidden">
+const element = <img src={user.avatarUrl}/>;
+        </textarea>
+            </div>
+            <div class="cool">
+                Однако JSX может иметь потомков
+                <textarea cols="110" rows="6" readonly style="overflow:hidden">
+const element = (
+    <div>
+        <h1>ETO H1</h1>
+        <h2>ETO H2</h2>
+    </div>
+    );
+        </textarea>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <h2>JSX предотвращает атаки инъекцией</h2>
+
+            <div class="cool">
+                В JSX можно встроить любой результат ввода и это будет безопасно!
+                <textarea cols="110" rows="3" readonly style="overflow:hidden">
+const title = response.PotensialnoOpasniyVvod;
+// это безопасно
+const element = <h1>{title}</h1>;
+        </textarea>
+            </div>
+
+            <div class="cool">
+                По умолчанию Реакт избегает обработку любых данных, перед отрисовкой. Таким образом, Мы гарантируем,
+                что не сможем что-то внедрить, написаное не явно. Перед отрисовкой всё преобразуется в строку.
+                Это помогает избежать XSS-атак.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <h2>JSX представляет собой JavaScript-объекты</h2>
+
+        <div class="cool">
+            Babel комплирует JSX в вызовы React.createElement().
+        </div>
+
+        <textarea cols="110" rows="11" readonly style="overflow:hidden">
+const element = (
+    <h1 className="greeting">
+        Hello, world!
+    </h1>
+);
+
+const element=createElement(
+            'h1',
+            {className: 'greeting'},
+            Hello, world!
+);
+        </textarea>
+
+        <div class="cool">
+            <span class="tag">React.createElement()</span> выполняет несколько проверок, чтобы помочь написать код без
+            багов, но по существу, он создаёт объект типо этого
+        </div>
+
+        <textarea cols="110" rows="8" readonly style="overflow:hidden">
+// Обратите внимание: эта структура упрощена
+const element = {
+    type: 'h1',
+    props: {
+            className: 'greeting',
+            children: 'Hello, world!'
+    }
+};
+        </textarea>
+
+        <div class="cool" style="text-decoration: underline;">
+            Данные обкъекты носят название "React-элементы".
+        </div>
+
+    </div>
+
+</div>
+
+<div class="block block_2">
+
+<!--
+    <div class="container">
+
+        <h1></h1>
+
+        <div class="cool"></div>
+
+        <span class="tag"></span>
+
+        <textarea cols="110" rows="6" readonly style="overflow:hidden"></textarea>
+    </div>
+-->
+
+    <div class="bgItems">
+        <div class="line">
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1>Отрисовка Элементов</h1>
+
+        <div class="cool"></div>
+
+        <span class="tag"></span>
+
+        <textarea cols="110" rows="6" readonly style="overflow:hidden"></textarea>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="cool.js"></script>
+<!--<div class="container">
+
+    <h1></h1>
+
+    <div class="cool">
+
+    </div>
+
+    <span class="tag"></span>
+    <textarea cols="110" rows="6" readonly style="overflow:hidden">
+
+    </textarea>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
